@@ -154,6 +154,7 @@ def _clean_message(msg):
   msg = msg.replace("&quot;", "\"")
   msg = msg.replace("&apos;", "'")
   msg = msg.replace("&amp;", "&")
+  msg = msg.replace("&#39;", "'")
   return msg, n, f
 
 def _strip_html(msg):
